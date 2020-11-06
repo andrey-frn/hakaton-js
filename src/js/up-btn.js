@@ -15,8 +15,8 @@ function upBtnCreate () {
   };
   const io = new IntersectionObserver(onEntry, options);
 
-  const formRef = document.querySelector('.search-form');
-  io.observe(formRef);
+  const headerRef = document.querySelector('.header');
+  io.observe(headerRef);
 
   function upToStartPage(event) {
     window.scrollTo(0, 0);
